@@ -1,0 +1,45 @@
+{
+  "name": "teachbase",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "nodemon": "^2.0.0",
+    "normalize.css": "^8.0.1",
+    "ramda": "^0.26.1",
+    "react": "^16.12.0",
+    "react-cookies": "^0.1.1",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1",
+    "react-loader-spinner": "^3.1.5",
+    "react-redux": "^7.1.3",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
+    "redux": "^4.0.4",
+    "redux-actions": "^2.6.5",
+    "redux-form": "^8.2.6",
+    "redux-saga": "^1.1.3",
+    "styled-components": "^4.4.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:3001/",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
