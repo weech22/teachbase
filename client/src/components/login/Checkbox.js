@@ -30,14 +30,14 @@ const Label = styled.span`
   margin-left: 5px;
 `;
 
-const Checkbox = ({ label, input: { onChange } }) => {
+const Checkbox = ({ className, label, input: { onChange } }) => {
   const [isChecked, setIsChecked] = useState(false);
   const handleChange = useCallback(() => {
     setIsChecked(!isChecked);
     onChange(!isChecked);
   }, [onChange, isChecked]);
   return (
-    <Wrapper>
+    <Wrapper className={className}>
       <StyledCheckbox
         onChange={handleChange}
         checked={isChecked}

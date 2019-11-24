@@ -43,6 +43,7 @@ const LabelBlock = styled.div`
 `;
 
 const TextInput = ({
+  className,
   label,
   type,
   input: { onChange },
@@ -58,7 +59,7 @@ const TextInput = ({
   const isError = useMemo(() => error && touched, [error, touched]);
 
   return (
-    <Wrapper>
+    <Wrapper className={className}>
       <LabelBlock>
         <Label isError={isError}>{label}</Label>
         <Error isError={isError}>{error || 'Ooops!'}</Error>
